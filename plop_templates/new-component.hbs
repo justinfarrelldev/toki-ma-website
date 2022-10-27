@@ -1,0 +1,33 @@
+/*
+    Description: {{ description }}
+*/
+
+import React, { useCallback, useEffect, useState } from 'react';
+
+interface Props {
+
+}
+
+export const {{ camelCase name }} = (props: Props) => {
+    const [loaded, setLoaded] = useState<boolean>(); 
+    
+    const load = useCallback(() => {
+        // TODO implement loading logic here
+
+        setLoaded(true);
+    }, [setLoaded])
+
+    const cleanup = useCallback(() => {
+            // TODO implement cleanup
+    }, [])
+
+    useEffect(() => {
+        if (!loaded) load();
+
+        return () => {
+            cleanup();
+        }
+    }, [load, cleanup])
+
+    return <>{{ camelCase name }} works!</>;
+};
