@@ -11,7 +11,7 @@ module.exports = function (plop) {
             {
                 type: 'input',
                 name: 'name',
-                message: 'Component name: ',
+                message: 'Name: ',
             },
             {
                 type: 'input',
@@ -23,7 +23,7 @@ module.exports = function (plop) {
             {
                 type: 'add',
                 path: 'src/{{ typeToCreate }}s/{{ camelCase name }}/{{ camelCase name }}.tsx',
-                templateFile: 'plop_templates/new-component.hbs',
+                templateFile: 'plop_templates/new-{{ typeToCreate }}.hbs',
             },
         ],
     });
