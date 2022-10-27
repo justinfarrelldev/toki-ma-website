@@ -49,3 +49,17 @@ npm run preview
 ```
 
 Note that preview simply serves the dist folder in a production-like environment - it will not build the production build for you (you need to have already made a production build).
+
+# Creating New Components and Pages
+
+This repository comes with Plop.js, allowing for easy creation of new components and pages with reusable templates.
+
+To create boilerplate for a new component or page, simply run:
+
+```
+npm run create
+```
+
+It will prompt you for whether you are creating a component or a page as well as a few other details. Once the prompts are complete, you should find boilerplate for the new component or page within the "src" folder.
+
+The templates are configurable and located within the "plop_templates" folder.
